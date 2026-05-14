@@ -1,0 +1,98 @@
+.file-management {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.file-management h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.files-table {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.files-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.files-table th {
+  background: #f8f9fa;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 2px solid #ddd;
+}
+
+.files-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.files-table tr:hover {
+  background: #f9f9f9;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.processed {
+  background: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.status-badge.processing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+}
+
+.loading,
+.error,
+.empty {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  border: 1px solid #fcc;
+}

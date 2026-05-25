@@ -15,7 +15,7 @@ class NotificationService:
         for customer in late_payers:
             notifications.append({
                 'type': 'warning',
-                'message': f"⚠️ {customer.name} has {customer.late_payment_count} late payments",
+                'message': f"{customer.name} has {customer.late_payment_count} late payments",
                 'severity': 'high' if customer.late_payment_count > 5 else 'medium'
             })
         
@@ -30,7 +30,7 @@ class NotificationService:
         for payment in high_value_overdue[:5]:  # Show top 5
             notifications.append({
                 'type': 'alert',
-                'message': f"🚨 High-value overdue invoice from {payment.customer.name}: ${payment.amount:,.2f}",
+                'message': f"High-value overdue invoice from {payment.customer.name}: ${payment.amount:,.2f}",
                 'severity': 'critical'
             })
         
@@ -54,18 +54,18 @@ class NotificationService:
                 change = ((current_month - previous_month) / previous_month) * 100
                 if abs(change) > 5:
                     direction = "increased" if change > 0 else "decreased"
-                    insights.append(f"💰 Revenue {direction} by {abs(change):.1f}% this month")
+                    insights.append(f"Revenue {direction} by {abs(change):.1f}% this month")
         
         # Late payment trend
         if len(trends) >= 2:
             current_late = trends[-1]['late_count']
             previous_late = trends[-2]['late_count']
             if current_late > previous_late:
-                insights.append(f"📈 Late payments increased from {previous_late} to {current_late}")
+                insights.append(f"Late payments increased from {previous_late} to {current_late}")
         
         # Overall collection rate
         collection_rate = summary['collection_rate']
         if collection_rate < 80:
-            insights.append(f"⚠️ Collection rate is {collection_rate:.1f}% (target: 90%+)")
+            insights.append(f"Collection rate is {collection_rate:.1f}% (target: 90%+)")
         
         return insights

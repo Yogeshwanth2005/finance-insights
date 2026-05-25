@@ -324,7 +324,7 @@ function LatePayments() {
       {/* ---- Right Content ---- */}
       <main className="payments-main">
         <div className="payments-top-bar">
-          <h2>⏰ Late Payments</h2>
+          <h2> Late Payments</h2>
           <span className="results-summary">
             Showing <strong>{startIndex + 1}–{endIndex}</strong> of{' '}
             <strong>{totalRecords}</strong> records

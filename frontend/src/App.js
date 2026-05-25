@@ -17,7 +17,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1>💰 Finance Insights Dashboard</h1>
+          <h1> Finance Insights Dashboard</h1>
           <p>AI-powered payment analytics and insights</p>
         </div>
       </header>
@@ -27,19 +27,19 @@ function App() {
           className={`nav-btn ${currentPage === 'dashboard' ? 'active' : ''}`}
           onClick={() => setCurrentPage('dashboard')}
         >
-          📊 Dashboard
+          Dashboard
         </button>
         <button
           className={`nav-btn ${currentPage === 'late-payments' ? 'active' : ''}`}
           onClick={() => setCurrentPage('late-payments')}
         >
-          ⏰ Late Payments
+          Late Payments
         </button>
         <button
           className={`nav-btn ${currentPage === 'upload' ? 'active' : ''}`}
           onClick={() => setCurrentPage('upload')}
         >
-          📤 Upload
+          Upload
         </button>
       </nav>
 

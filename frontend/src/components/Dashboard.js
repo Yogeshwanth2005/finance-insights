@@ -56,7 +56,7 @@ function Dashboard() {
       {/* Notifications */}
       {notifications.length > 0 && (
         <div className="notifications-section">
-          <h3>🔔 Notifications & Insights</h3>
+          <h3> Notifications & Insights</h3>
           <div className="notifications-list">
             {notifications.map((notif, idx) => (
               <div key={idx} className={`notification ${notif.severity}`}>
@@ -99,7 +99,7 @@ function Dashboard() {
       {/* Charts */}
       <div className="charts-section">
         <div className="chart-container">
-          <h3>📈 Payment Trends</h3>
+          <h3> Payment Trends</h3>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={trends}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -124,7 +124,7 @@ function Dashboard() {
         </div>
 
         <div className="chart-container">
-          <h3>📊 Collection Rate Trend</h3>
+          <h3> Collection Rate Trend</h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={trends}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -143,7 +143,7 @@ function Dashboard() {
 
       {/* Customer Behavior */}
       <div className="customers-section">
-        <h3>👥 Customer Risk Analysis</h3>
+        <h3> Customer Risk Analysis</h3>
         <div className="customers-table">
           <table>
             <thead>

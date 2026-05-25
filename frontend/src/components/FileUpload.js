@@ -63,8 +63,8 @@ function FileUpload({ onUploadSuccess }) {
 
   return (
     <div className="file-upload-container">
-      <h2>📤 Upload Excel File</h2>
-      
+      <h2> Upload Excel File</h2>
+
       <div className="upload-section">
         <input
           type="file"
@@ -80,9 +80,9 @@ function FileUpload({ onUploadSuccess }) {
 
       {preview && preview.columns && (
         <div className="preview-section">
-          <h3>📋 Column Mapping</h3>
+          <h3> Column Mapping</h3>
           <p>Total rows: {preview.total_rows}</p>
-          
+
           <div className="column-mapping">
             {['customer', 'amount', 'due_date', 'payment_date', 'email', 'phone'].map(
               (field) => (

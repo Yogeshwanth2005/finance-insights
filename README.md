@@ -1,4 +1,4 @@
-# Finance Insights - AI Payment Analytics Dashboard
+# CashFlowIQ - AI Payment Analytics Dashboard
 
 A comprehensive AI-powered system for analyzing financial data, detecting late payments, tracking trends, and providing actionable business insights.
 
@@ -328,3 +328,4 @@ For issues or questions:
 ---
 
 **Built with ❤️ for better financial insights**
+

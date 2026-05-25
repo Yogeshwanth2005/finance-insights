@@ -41,7 +41,7 @@ function FileManagement() {
 
   return (
     <div className="file-management">
-      <h2>📁 Uploaded Files</h2>
+      <h2> Uploaded Files</h2>
       <div className="files-table">
         <table>
           <thead>
@@ -69,7 +69,7 @@ function FileManagement() {
                     className="delete-btn"
                     onClick={() => handleDelete(file.id)}
                   >
-                    🗑️ Delete
+                     Delete
                   </button>
                 </td>
               </tr>

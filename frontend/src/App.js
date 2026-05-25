@@ -17,7 +17,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1> Finance Insights Dashboard</h1>
+          <h1> CashFlowIQ</h1>
           <p>AI-powered payment analytics and insights</p>
         </div>
       </header>
@@ -53,7 +53,7 @@ function App() {
 
       <footer className="app-footer">
         <p>
-          © 2024 Finance Insights | Real-time payment analytics for your business
+          © 2024 CashFlowIQ | Real-time payment analytics for your business
         </p>
       </footer>
     </div>
